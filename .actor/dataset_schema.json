@@ -1,48 +1,84 @@
 {
-    "title": "Pizza Prices Dataset",
-    "description": "Pizza menu items with prices",
-    "views": [
-        {
-            "name": "overview",
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
             "title": "Pizza Prices",
-            "description": "All scraped pizza prices",
+            "description": "All scraped pizza menu items with prices",
             "transformation": {
                 "fields": [
+                    "schema_version",
+                    "type",
+                    "franchise",
                     "franchise_display",
                     "pizza_name",
                     "size",
                     "price",
+                    "currency",
                     "category",
+                    "description",
+                    "menu_url",
                     "zip_code",
                     "scraped_at"
                 ]
             },
             "display": {
+                "component": "table",
                 "properties": {
+                    "schema_version": {
+                        "label": "Schema",
+                        "format": "text"
+                    },
+                    "type": {
+                        "label": "Type",
+                        "format": "text"
+                    },
+                    "franchise": {
+                        "label": "Code",
+                        "format": "text"
+                    },
                     "franchise_display": {
-                        "title": "Franchise"
+                        "label": "Franchise",
+                        "format": "text"
                     },
                     "pizza_name": {
-                        "title": "Pizza"
+                        "label": "Pizza",
+                        "format": "text"
                     },
                     "size": {
-                        "title": "Size"
+                        "label": "Size",
+                        "format": "text"
                     },
                     "price": {
-                        "title": "Price ($)",
+                        "label": "Price ($)",
                         "format": "number"
                     },
+                    "currency": {
+                        "label": "Currency",
+                        "format": "text"
+                    },
                     "category": {
-                        "title": "Category"
+                        "label": "Category",
+                        "format": "text"
+                    },
+                    "description": {
+                        "label": "Description",
+                        "format": "text"
+                    },
+                    "menu_url": {
+                        "label": "Menu URL",
+                        "format": "link"
                     },
                     "zip_code": {
-                        "title": "Zip Code"
+                        "label": "Zip Code",
+                        "format": "text"
                     },
                     "scraped_at": {
-                        "title": "Scraped At"
+                        "label": "Scraped At",
+                        "format": "text"
                     }
                 }
             }
         }
-    ]
+    }
 }
