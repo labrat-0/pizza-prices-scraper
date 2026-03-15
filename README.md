@@ -1,6 +1,11 @@
 # 🍕 Pizza Prices Scraper
 
-**Track real-time pizza prices across major US franchises — Domino's, Pizza Hut, Papa John's, and Little Caesars. Perfect for competitive pricing intelligence, menu monitoring, and market research.**
+> **Real-time pizza pricing intelligence from America's top franchises. Track prices, monitor menu changes, and analyze QSR pricing strategies with structured, API-ready data.**
+>
+> ✅ Domino's | Pizza Hut | Papa John's | Little Caesars
+> ✅ Location-based pricing (by ZIP code)
+> ✅ JSON output, MCP-ready for AI agents
+> ✅ Pay-per-result: $0.0005/item ($0.50 per 1,000)
 
 ## What does it do?
 
@@ -164,6 +169,18 @@ Check the `extraction_notes` field. Most likely the menu structure changed or th
 
 ---
 
+## Built for the Agent Economy
+
+This actor is **MCP-ready** and designed for AI agent integration. Feed structured pizza pricing data into your agent pipelines for competitive analysis, menu monitoring, and market research automation.
+
+**Agent use cases:**
+- Automated price comparison reports
+- Real-time menu change detection
+- Franchise pricing strategy analysis
+- Food delivery app data feeds
+
+---
+
 ## License
 
-MIT
+MIT — Free to use, modify, and distribute. Copyright © 2026 labrat0
