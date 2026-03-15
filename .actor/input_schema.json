@@ -1,0 +1,59 @@
+{
+    "title": "Pizza Prices Scraper - Input",
+    "description": "Scrape pizza menu prices from major US franchises. Specify which franchises to scrape and a zip code for location-based pricing.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "franchises": {
+            "sectionCaption": "Target Franchises",
+            "sectionDescription": "Select which pizza franchises to scrape. Prices vary by location.",
+            "title": "Franchises",
+            "type": "array",
+            "description": "List of franchises: dominos, pizzahut, papajohns, littlecaesars",
+            "editor": "stringList",
+            "prefill": ["dominos", "pizzahut"],
+            "uniqueItems": true
+        },
+        "zipCode": {
+            "title": "Zip Code",
+            "type": "string",
+            "description": "US zip code for location-based pricing. 5 digits only.",
+            "editor": "textfield",
+            "default": "10001",
+            "prefill": "10001"
+        },
+        "maxResults": {
+            "sectionCaption": "Output Settings",
+            "sectionDescription": "Control how many results are returned.",
+            "title": "Max results",
+            "type": "integer",
+            "description": "Maximum number of pizza prices to return (1-200). Free users: max 25.",
+            "editor": "number",
+            "default": 100,
+            "minimum": 1,
+            "maximum": 200
+        },
+        "requestIntervalSecs": {
+            "sectionCaption": "Advanced Settings",
+            "sectionDescription": "Fine-tune performance and rate limiting.",
+            "title": "Request interval (seconds)",
+            "type": "number",
+            "description": "Minimum seconds between requests. Higher = more polite to servers.",
+            "editor": "number",
+            "default": 2.0,
+            "minimum": 0.5,
+            "maximum": 30.0
+        },
+        "timeoutSecs": {
+            "title": "Timeout (seconds)",
+            "type": "integer",
+            "description": "Page load timeout in seconds.",
+            "editor": "number",
+            "default": 30,
+            "minimum": 5,
+            "maximum": 120
+        }
+    },
+    "required": ["franchises"],
+    "additionalProperties": false
+}

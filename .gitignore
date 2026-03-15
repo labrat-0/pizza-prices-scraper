@@ -1,0 +1,25 @@
+# Architecture documentation (local only, never commit)
+.arc/
+
+# Apify storage (local testing)
+storage/
+apify_storage/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.env
+.env.local

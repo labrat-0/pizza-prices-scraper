@@ -1,0 +1,48 @@
+{
+    "title": "Pizza Prices Dataset",
+    "description": "Pizza menu items with prices",
+    "views": [
+        {
+            "name": "overview",
+            "title": "Pizza Prices",
+            "description": "All scraped pizza prices",
+            "transformation": {
+                "fields": [
+                    "franchise_display",
+                    "pizza_name",
+                    "size",
+                    "price",
+                    "category",
+                    "zip_code",
+                    "scraped_at"
+                ]
+            },
+            "display": {
+                "properties": {
+                    "franchise_display": {
+                        "title": "Franchise"
+                    },
+                    "pizza_name": {
+                        "title": "Pizza"
+                    },
+                    "size": {
+                        "title": "Size"
+                    },
+                    "price": {
+                        "title": "Price ($)",
+                        "format": "number"
+                    },
+                    "category": {
+                        "title": "Category"
+                    },
+                    "zip_code": {
+                        "title": "Zip Code"
+                    },
+                    "scraped_at": {
+                        "title": "Scraped At"
+                    }
+                }
+            }
+        }
+    ]
+}

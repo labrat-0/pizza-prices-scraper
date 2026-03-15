@@ -1,0 +1,14 @@
+{
+    "actorSpecification": 1,
+    "name": "pizza-prices-scraper",
+    "title": "Pizza Prices Scraper",
+    "description": "Scrape real-time pizza menu prices from major US franchises. Supports Domino's, Pizza Hut, Papa John's, and Little Caesars.",
+    "version": "1.0.0",
+    "buildTag": "latest",
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    },
+    "dockerfile": "./Dockerfile"
+}
